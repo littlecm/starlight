@@ -1,0 +1,23 @@
+---
+// src/components/ui/Checkbox.astro
+const { checked } = Astro.props;
+---
+<input type="checkbox" class="checkbox" checked={checked} />
+
+<style>
+.checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.checkbox:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+</style>
