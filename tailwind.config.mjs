@@ -1,18 +1,23 @@
-import colors from 'tailwindcss/colors';
-import starlightPlugin from '@astrojs/starlight-tailwind';
+import { defineConfig } from 'tailwindcss'
 
-/** @type {import('tailwindcss').Config} */
-export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
-		extend: {
-			colors: {
-				// Your preferred accent color. Indigo is closest to Starlight’s defaults.
-				accent: colors.indigo,
-				// Your preferred gray scale. Zinc is closest to Starlight’s defaults.
-				gray: colors.zinc,
-			},
-		},
-	},
-	plugins: [starlightPlugin()],
-};
+export default defineConfig({
+  content: [
+    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'background': '#f9fafb',
+        'primary': '#2563eb',
+        'primary-foreground': '#ffffff',
+        'primary-hover': '#1e40af',
+        'border-color': '#d1d5db',
+        'border-hover': '#a1a1aa',
+        'text': '#111827',
+        'text-muted': '#6b7280',
+        'hover-bg': '#e5e7eb',
+      },
+    },
+  },
+  plugins: [],
+});
