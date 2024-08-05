@@ -1,0 +1,147 @@
+---
+// src/components/MyComponent.astro
+import Card from './ui/Card.astro';
+import CardHeader from './ui/CardHeader.astro';
+import CardTitle from './ui/CardTitle.astro';
+import CardContent from './ui/CardContent.astro';
+import CardFooter from './ui/CardFooter.astro';
+import Button from './ui/Button.astro';
+import Checkbox from './ui/Checkbox.astro';
+import FilePenIcon from './ui/FilePenIcon.astro';
+---
+<div class="flex flex-col min-h-screen bg-background">
+  <header class="bg-primary text-primary-foreground py-4 px-6 shadow-md">
+    <div class="container mx-auto flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold">Camping Trip Planner</a>
+      <nav class="flex items-center gap-4">
+        <a href="#" class="hover:text-primary-foreground/80">Trips</a>
+        <a href="#" class="hover:text-primary-foreground/80">Packing List</a>
+        <a href="#" class="hover:text-primary-foreground/80">Emergency</a>
+        <a href="#" class="hover:text-primary-foreground/80">Settings</a>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-1 container mx-auto py-8 px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <Card>
+        <CardHeader>
+          <CardTitle>Upcoming Trips</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="font-semibold">Yosemite National Park</h3>
+                <p class="text-muted-foreground">July 15-20, 2023</p>
+              </div>
+              <Button variant="outline">View</Button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="font-semibold">Yellowstone National Park</h3>
+                <p class="text-muted-foreground">August 1-7, 2023</p>
+              </div>
+              <Button variant="outline">View</Button>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Packing List</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <Checkbox />
+                <span>Sleeping bag</span>
+              </div>
+              <Button variant="ghost" size="icon">
+                <FilePenIcon class="w-5 h-5" />
+              </Button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <Checkbox />
+                <span>Camping stove</span>
+              </div>
+              <Button variant="ghost" size="icon">
+                <FilePenIcon class="w-5 h-5" />
+              </Button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <Checkbox />
+                <span>Hiking boots</span>
+              </div>
+              <Button variant="ghost" size="icon">
+                <FilePenIcon class="w-5 h-5" />
+              </Button>
+            </div>
+          </div>
+        </CardContent>
+        <CardFooter>
+          <Button>Edit Packing List</Button>
+        </CardFooter>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Emergency Contacts</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="font-semibold">John Doe</h3>
+                <p class="text-muted-foreground">+1 (555) 555-5555</p>
+              </div>
+              <Button variant="ghost" size="icon">
+                <FilePenIcon class="w-5 h-5" />
+              </Button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="font-semibold">Jane Smith</h3>
+                <p class="text-muted-foreground">+1 (555) 555-5556</p>
+              </div>
+              <Button variant="ghost" size="icon">
+                <FilePenIcon class="w-5 h-5" />
+              </Button>
+            </div>
+          </div>
+        </CardContent>
+        <CardFooter>
+          <Button>Add Contact</Button>
+        </CardFooter>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Trip Notes</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div class="space-y-4">
+            <div>
+              <h3 class="font-semibold">Yosemite National Park</h3>
+              <p class="text-muted-foreground">
+                Remember to pack warm clothes for the evenings. Also, make sure to reserve a campsite in advance.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold">Yellowstone National Park</h3>
+              <p class="text-muted-foreground">
+                Check the weather forecast a few days before the trip and pack accordingly. Don't forget bear spray!
+              </p>
+            </div>
+          </div>
+        </CardContent>
+        <CardFooter>
+          <Button>Add Note</Button>
+        </CardFooter>
+      </Card>
+    </div>
+  </main>
+  <footer class="bg-primary text-primary-foreground py-4 px-6 shadow-md">
+    <div class="container mx-auto text-center">&copy; 2023 Camping Trip Planner. All rights reserved.</div>
+  </footer>
+</div>
