@@ -48,7 +48,7 @@
 }
 
 .btn-ghost:hover {
-  @apply bg-hover-bg;
+  @apply hover-bg;
 }
 
 .btn-icon {
