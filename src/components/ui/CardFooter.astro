@@ -1,0 +1,14 @@
+---
+// src/components/ui/CardFooter.astro
+const { children } = Astro.props;
+---
+<div class="card-footer">
+  {children}
+</div>
+
+<style>
+.card-footer {
+  margin-top: 1rem;
+  text-align: right;
+}
+</style>
