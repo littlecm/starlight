@@ -4,7 +4,7 @@
 
 /* Custom Styles */
 .card {
-  @apply bg-background border border-border-color rounded-lg shadow-md p-4;
+  @apply bg-background border border-gray-300 rounded-lg shadow-md p-4;
 }
 
 .card-header {
@@ -36,11 +36,11 @@
 }
 
 .btn-outline {
-  @apply bg-transparent border border-border-color text-text;
+  @apply bg-transparent border border-gray-300 text-text;
 }
 
 .btn-outline:hover {
-  @apply bg-border-hover;
+  @apply border-hover;
 }
 
 .btn-ghost {
@@ -48,7 +48,7 @@
 }
 
 .btn-ghost:hover {
-  @apply bg-hover-bg;
+  @apply hover-bg;
 }
 
 .btn-icon {
@@ -56,7 +56,7 @@
 }
 
 .checkbox {
-  @apply w-5 h-5 border border-border-color rounded appearance-none bg-white cursor-pointer transition-colors;
+  @apply w-5 h-5 border border-gray-300 rounded appearance-none bg-white cursor-pointer transition-colors;
 }
 
 .checkbox:checked {
