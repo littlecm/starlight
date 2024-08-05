@@ -2,7 +2,191 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-Add additional Tailwind styles to this file, for example with @layer:
-https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
-*/
+/* Custom Styles */
+.card {
+  @apply bg-background border border-border-color rounded-lg shadow-md p-4;
+}
+
+.card-header {
+  @apply text-lg font-semibold mb-2;
+}
+
+.card-title {
+  @apply text-xl font-bold;
+}
+
+.card-content {
+  @apply text-base text-text-muted;
+}
+
+.card-footer {
+  @apply mt-4 text-right;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center border border-transparent rounded-md px-4 py-2 text-base font-medium cursor-pointer transition-colors;
+}
+
+.btn-primary {
+  @apply bg-primary text-primary-foreground;
+}
+
+.btn-primary:hover {
+  @apply bg-primary-hover;
+}
+
+.btn-outline {
+  @apply bg-transparent border border-border-color text-text;
+}
+
+.btn-outline:hover {
+  @apply bg-border-hover;
+}
+
+.btn-ghost {
+  @apply bg-transparent text-text-muted;
+}
+
+.btn-ghost:hover {
+  @apply bg-hover-bg;
+}
+
+.btn-icon {
+  @apply p-1 rounded-full;
+}
+
+.checkbox {
+  @apply w-5 h-5 border border-border-color rounded appearance-none bg-white cursor-pointer transition-colors;
+}
+
+.checkbox:checked {
+  @apply bg-primary border-primary;
+}
+
+.icon {
+  @apply w-6 h-6 stroke-text;
+}
+
+.bg-background {
+  @apply bg-background;
+}
+
+.bg-primary {
+  @apply bg-primary;
+}
+
+.text-primary-foreground {
+  @apply text-primary-foreground;
+}
+
+.text-muted-foreground {
+  @apply text-text-muted;
+}
+
+.hover\:text-primary-foreground\/80:hover {
+  @apply text-primary-foreground;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.shadow-md {
+  @apply shadow-md;
+}
+
+.py-4 {
+  @apply py-4;
+}
+
+.px-6 {
+  @apply px-6;
+}
+
+.text-2xl {
+  @apply text-2xl;
+}
+
+.font-bold {
+  @apply font-bold;
+}
+
+.flex {
+  @apply flex;
+}
+
+.flex-col {
+  @apply flex-col;
+}
+
+.items-center {
+  @apply items-center;
+}
+
+.justify-between {
+  @apply justify-between;
+}
+
+.gap-4 {
+  @apply gap-4;
+}
+
+.min-h-screen {
+  @apply min-h-screen;
+}
+
+.py-8 {
+  @apply py-8;
+}
+
+.px-6 {
+  @apply px-6;
+}
+
+.grid {
+  @apply grid;
+}
+
+.grid-cols-1 {
+  @apply grid-cols-1;
+}
+
+.md\:grid-cols-2 {
+  @apply md:grid-cols-2;
+}
+
+.lg\:grid-cols-3 {
+  @apply lg:grid-cols-3;
+}
+
+.gap-6 {
+  @apply gap-6;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  @apply mt-2;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  @apply mt-4;
+}
+
+.mt-1 {
+  @apply mt-1;
+}
+
+.mt-2 {
+  @apply mt-2;
+}
+
+.mt-4 {
+  @apply mt-4;
+}
+
+.mt-6 {
+  @apply mt-6;
+}
+
+.text-center {
+  @apply text-center;
+}
