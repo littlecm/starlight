@@ -1,0 +1,15 @@
+---
+// src/components/ui/CardHeader.astro
+const { children } = Astro.props;
+---
+<div class="card-header">
+  {children}
+</div>
+
+<style>
+.card-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+</style>
