@@ -7,4 +7,11 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
+  content: {
+    collections: {
+      docs: {
+        directory: './src/content/docs',
+      },
+    },
+  },
 });
